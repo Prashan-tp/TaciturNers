@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="../assets/chattingbox.css">
+   <div id="new-chat-box">
+    <ul id="chat-messages-list">
+        <li class="other-message">
+            <span>Other Message</span>
+        </li>
+        <li class="self-message">
+            <span>
+                Self Message
+            </span>
+            
+        </li>
+
+    </ul>
+    <div id = "create-chatroom">
+        <input id= "chatter"placeholder="CHATROOM" >
+        <button id="chatroom">ENTER CHATROOM</button>
+    </div>
+    <div id="chat-message-input-container">
+        
+        <input id="chat-message-input" placeholder="Type message here">
+        <button id="send-message">Send</button>
+    </div>
+    <div id="image-share">
+       
+        <form enctype="multipart/form-data" method="POST">
+            
+            <input id="chat-image" type="file" >
+        
+            <button id="send-image" type="submit">Post</button>
+        </form>
+
+    </div>
+
+
+
+  <!-- <script type="text/javascript">
+   let a =  document.getElementById("chat-image");
+   console.log(a);
+   console.log(a.target)
+
+</script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>>
+      <script  src ='/javascript/chat_engine.js'> </script>
+       <script >
+           
+    
+    
+      new ChatEngine('new-chat-box' , '<%= locals.user.email %>');
+    </script> 
+      
+   </div>
