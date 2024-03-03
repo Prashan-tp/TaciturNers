@@ -1,3 +1,7 @@
 # TaciturNers
-Branch Main -> README.md
-Branch Chatter -> Code
+Branches
+
+Main -> README.md
+
+
+Chatter -> Backend And Frontend Side 
